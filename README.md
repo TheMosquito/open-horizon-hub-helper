@@ -13,6 +13,6 @@ Also noteworthy is that the All-In-One Management Hub, by default, **binds only 
 
 Once you have done all of the steps in my `HOW_TO_SETUP_AN_OPEN_HORIZON_HUB` recipe, you can start registering edge nodes.
 
-Unfortunately the edge node agent installation process also installs this spuriouus `ibm.helloworld` workload. So my HOW_TO_SETUP_DEVICE_NODES recipe gets you to undo that. After those steps are complete yoou can go ahead and register the edge node normally using a node policy or a deployment pattern.
+Unfortunately the edge node agent installation process also installs this spuriouus `ibm.helloworld` workload. So my `HOW_TO_SETUP_DEVICE_NODES` recipe gets you to undo that. After those steps are complete you can go ahead and register the edge node normally using a node policy or a deployment pattern.
 
 Also note that the All-In-One Management Hub fully supports SDO. Details on that are here: [https://github.com/open-horizon/SDO-support](https://github.com/open-horizon/SDO-support).
