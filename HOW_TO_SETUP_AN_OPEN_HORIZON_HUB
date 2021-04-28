@@ -1,0 +1,11 @@
+curl -sSL https://raw.githubusercontent.com/open-horiz^Mzon/devops/master/mgmt-hub/deploy-mgmt-hub.sh | bash
+# IMPORTANT! Ignore the creds shown here!
+./deploy-mgmt-hub.sh -S
+export HZN_LISTEN_IP=___________
+./deploy-mgmt-hub.sh
+# IMPORTANT! Save the creds shown here! (HZN_ORG_ID, and HZN_EXCHANGE_USER_AUTH=admin: ... )
+hzn unregister -f
+# Get the 2 URLs from the configuration file (needed for agent install on edge nodes):
+grep URL /etc/default/horizon
+  HZN_EXCHANGE_URL=http://___________:3090/v1
+  HZN_FSS_CSSURL=http://___________:9443/
