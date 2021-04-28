@@ -1,0 +1,8 @@
+curl -sSL https://raw.githubusercontent.com/open-horizon/anax/master/agent-install/agent-install.sh -O
+chmod +x ./agent-install.sh
+export HZN_ORG_ID=myorg
+export HZN_EXCHANGE_USER_AUTH=admin:_____________________________
+export HZN_EXCHANGE_URL=http://___________:3090/v1/
+export HZN_FSS_CSSURL=http://___________:9443/
+sudo -E ./agent-install.sh -i anax: -k css:
+hzn unregister -f
